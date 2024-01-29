@@ -1,0 +1,291 @@
+* {
+  font-family: "IBM Plex Sans", sans-serif;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: #fcfaf9;
+  background-image: url(./equalizer-landing-page/starter-code/assets/bg-main-mobile.png);
+  background-repeat: no-repeat;
+  background-position-y: -20%;
+}
+
+header {
+  padding: 40px 0px 64px 24px;
+}
+
+.main_text {
+  padding: 0px 24px 166px;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.main_text h2 {
+  color: #191826;
+  font-size: 40px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 48px; /* 120% */
+  letter-spacing: -0.455px;
+}
+
+.main_text p {
+  color: #191826;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 26px; /* 162.5% */
+}
+
+.main_body {
+  min-height: 600px;
+  border-radius: 12px;
+  background-color: #191826;
+  background-image: url(./equalizer-landing-page/starter-code/assets/bg-pattern-2.svg);
+  background-repeat: no-repeat;
+  background-position: center top;
+  position: relative;
+  margin-bottom: 390px;
+}
+
+.main_body .phone {
+  position: relative;
+  bottom: 98px;
+  left: 23%;
+  width: 56%;
+  max-width: 318px;
+}
+
+.main_body .subscribe {
+  border-radius: 12px;
+  background: #fa7453;
+  padding: 48px 37px;
+  display: flex;
+  flex-direction: column;
+  position: absolute;
+  top: 380px;
+  max-width: 446px;
+}
+
+.subscribe h3 {
+  color: #fcfaf9;
+  font-size: 32px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 40px; /* 125% */
+  margin-bottom: 12px;
+}
+
+.subscribe p {
+  color: #fcfaf9;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 28px; /* 155.556% */
+  margin-bottom: 36px;
+}
+
+.subscribe .price {
+  display: flex;
+  gap: 16px;
+  margin-bottom: 32px;
+  align-items: center;
+}
+
+.price h2 {
+  color: #fcfaf9;
+  font-size: 65px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 52px; /* 80% */
+}
+.price h5 {
+  color: #fcfaf9;
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 32px; /* 160% */
+  letter-spacing: -0.2px;
+}
+
+.subscribe .btn {
+  border: none;
+  outline: none;
+  padding: 15px;
+  border-radius: 12px;
+  text-align: center;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 32px; /* 177.778% */
+  letter-spacing: -0.18px;
+}
+
+.ios {
+  background: #191826;
+  color: #fcfaf9;
+  margin-bottom: 16px;
+}
+
+.ios:hover {
+  background: #66e2dc;
+}
+
+.android {
+  background: #fcfaf9;
+  color: #191826;
+}
+.android:hover {
+  background: #ffb964;
+}
+
+footer {
+  padding: 0px 24px 80px;
+}
+
+footer .logo_footer {
+  margin-bottom: 32px;
+}
+footer p {
+  color: #191826;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 26px; /* 162.5% */
+  margin-bottom: 64px;
+}
+
+footer p a {
+  color: #191826;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 26px;
+  text-decoration: none;
+}
+
+footer .icons {
+  display: flex;
+  gap: 20px;
+  align-items: center;
+}
+
+/* -----------------  Tablet -------------------- */
+
+@media (min-width: 768px) {
+  body {
+    background-color: #fcfaf9;
+    background-image: url(./equalizer-landing-page/starter-code/assets/bg-main-mobile.png),
+      url(./equalizer-landing-page/starter-code/assets/bg-pattern-1.svg);
+    background-repeat: no-repeat;
+    background-position-x: 100%, 106%;
+    background-position-y: 0%, -2%;
+    background-size: 983px 808px, 266.667px 400px;
+  }
+
+  header {
+    padding: 62px 0px 95px 40px;
+  }
+
+  .main_text {
+    padding: 0px 0px 249px 39px;
+    gap: 28px;
+    max-width: 514px;
+  }
+
+  .main_text h2 {
+    font-size: 64px;
+    line-height: 64px; /* 100% */
+    letter-spacing: -0.727px;
+  }
+
+  .main_text p {
+    font-size: 18px;
+    line-height: 28px; /* 155.556% */
+  }
+
+  .main_body {
+    margin-inline: 33px;
+    position: relative;
+    margin-bottom: 183px;
+  }
+
+  .main_body .phone {
+    bottom: 184px;
+    left: 64px;
+  }
+
+  .main_body .subscribe {
+    top: 226px;
+    right: 58px;
+    width: 399px;
+  }
+
+  footer {
+    padding: 0px 33px 85px;
+    display: flex;
+    justify-content: space-between;
+  }
+  .footer-text {
+    max-width: 366px;
+  }
+}
+
+/* --------------------- Desktop ------------------- */
+
+@media (min-width: 1024px) {
+  body {
+    background-color: #fcfaf9;
+    background-image: url(./equalizer-landing-page/starter-code/assets/bg-main-mobile.png),
+      url(./equalizer-landing-page/starter-code/assets/bg-pattern-1.svg);
+    background-repeat: no-repeat;
+    background-position-x: 100%, 106%;
+    background-position-y: 0%, -2%;
+    background-size: 983px 808px, 266.667px 400px;
+  }
+
+  header {
+    padding: 62px 0px 127px 166px;
+  }
+
+  .main_text {
+    padding: 0px 0px 321px 165px;
+    gap: 40px;
+    max-width: 80%;
+  }
+
+  .main_text h2 {
+    font-size: 88px;
+    line-height: 88px; /* 100% */
+    letter-spacing: -1px;
+  }
+
+  .main_text p {
+    font-size: 20px;
+    line-height: 34px; /* 155.556% */
+  }
+
+  .main_body {
+    margin-inline: 165px;
+    margin-bottom: 202px;
+  }
+
+  footer {
+    padding: 0px 166px 91px;
+    display: flex;
+    justify-content: space-between;
+  }
+  .footer-text {
+    display: flex;
+    align-items: flex-start;
+    gap: 137px;
+    max-width: 100%;
+  }
+
+  .footer-text p {
+    width: 366px;
+  }
+}
